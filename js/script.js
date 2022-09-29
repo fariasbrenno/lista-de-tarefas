@@ -18,7 +18,7 @@ function addTarefa(){
                 ${valorInput}
             </div>
             <div class="item-botao">
-                <button class="delete">Deletar
+                <button class="delete" onclick = "deletar(${contador})">Deletar
                     <i class="mdi mdi-delete"></i>
                 </button>
             </div>
@@ -35,6 +35,14 @@ function addTarefa(){
     }
 }
 
+function deletar(id){
+    var tarefa = document.getElementById(id);
+    tarefa.remove();
+}
+
+function marcarTarefa(){
+    
+}
 //Eventos
 btnAdd.addEventListener('click', addTarefa);
 
@@ -44,3 +52,5 @@ input.addEventListener('keyup', function (event){
         btnAdd.click();
     }
 })
+
+
