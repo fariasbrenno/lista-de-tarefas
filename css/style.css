@@ -80,6 +80,7 @@ main{
     height: 80px;
     width: 100%;
     border: none;
+    cursor: pointer;
 }
 .mdi-check-circle{
     color: green;
