@@ -50,6 +50,8 @@ function marcarTarefa(id){
         var icone = document.getElementById('icone_' + id)
         icone.classList.remove('mdi-circle-outline');
         icone.classList.add('mdi-check-circle');
+
+        item.parentNode.appendChild(item);
     }else{
         item.classList.remove('clicado');
         
